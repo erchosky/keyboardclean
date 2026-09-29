@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0000010000000000000001 /* KyboardcleanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000101 /* KyboardcleanApp.swift */; };
+		1A0000010000000000000002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000102 /* AppDelegate.swift */; };
+		1A0000010000000000000003 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000103 /* MainView.swift */; };
+		1A0000010000000000000004 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000104 /* OverlayView.swift */; };
+		1A0000010000000000000006 /* DurationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000106 /* DurationPicker.swift */; };
+		1A0000010000000000000007 /* EventTapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000107 /* EventTapManager.swift */; };
+		1A0000010000000000000008 /* CleaningSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000108 /* CleaningSessionManager.swift */; };
+		1A0000010000000000000009 /* PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000109 /* PermissionsManager.swift */; };
+		1A000001000000000000000A /* OverlayWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000010A /* OverlayWindowController.swift */; };
+		1A000001000000000000000B /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000010B /* SoundManager.swift */; };
+		1A000001000000000000000C /* CleaningDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000010C /* CleaningDuration.swift */; };
+		1A000001000000000000000D /* CleaningState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000010D /* CleaningState.swift */; };
+		1A000001000000000000000E /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000010E /* AppSettings.swift */; };
+		1A000001000000000000000F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000114 /* Assets.xcassets */; };
+		1A0000010000000000000012 /* AppText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000116 /* AppText.swift */; };
+		1A0000010000000000000013 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000117 /* SettingsView.swift */; };
+		1A0000010000000000000014 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000118 /* Localizable.strings */; };
+		1A0000010000000000000015 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000111 /* README.md */; };
+		1A0000010000000000000016 /* README_en.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000011B /* README_en.md */; };
+		1A0000010000000000000017 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000011C /* PrivacyInfo.xcprivacy */; };
+		1A000001000000000000001B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000120 /* InfoPlist.strings */; };
+		1A000001000000000000001C /* CleaningHistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000123 /* CleaningHistoryStore.swift */; };
+		1A000001000000000000001D /* GlobalShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000124 /* GlobalShortcutManager.swift */; };
+		1A000001000000000000001E /* ReminderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000125 /* ReminderManager.swift */; };
+		1A000001000000000000001F /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000126 /* MenuBarView.swift */; };
+		1A0000010000000000000020 /* ShortcutRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000127 /* ShortcutRecorderView.swift */; };
+		1A0000010000000000000021 /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000128 /* GeneralSettingsView.swift */; };
+		1A0000010000000000000022 /* AutomationSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000129 /* AutomationSettingsView.swift */; };
+		1A0000010000000000000023 /* ActivitySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000012A /* ActivitySettingsView.swift */; };
+		2B4E3746FFCD6D3A500B01C0 /* EventTapSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC9A21AB988FC46EE53A5E5 /* EventTapSupport.swift */; };
+		2B7E75ACB3773C7420DDDA64 /* EmergencyExit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96B26A5DA01C0D21D995BE /* EmergencyExit.swift */; };
+		2BBC70B4FE22A5897B9AAFCB /* TestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B912AE55D0607264E7DF6E6 /* TestSupport.swift */; };
+		2BECD960A89FA3D116D83978 /* SettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B716F0DE187AC1DA00B45AD /* SettingsTests.swift */; };
+		2BB29BAA0141E4E3DE61BF1A /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B09B72B2939EFBD78608869 /* LocalizationTests.swift */; };
+		2BF8319B5A71A09BB2E8E848 /* CleaningHistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B527FB46B007C05DBB3AF2B /* CleaningHistoryTests.swift */; };
+		2B3504D2C173BE9A2AC9D663 /* GlobalShortcutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B932F33F7ED293777876470 /* GlobalShortcutTests.swift */; };
+		2BE563D697453E1DFFE18E5A /* ReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD0117DE9684DD79306C56A /* ReminderTests.swift */; };
+		2BD22851D6DF296179B84535 /* SystemIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD76EDB089FF434553A8A98 /* SystemIntegrationTests.swift */; };
+		2B8B4F23C368F663BB22882B /* OverlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3B692E68C3D7750DC6ED8 /* OverlayTests.swift */; };
+		2BEC7D6B689D01D10A228FFA /* EventTapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD38AEF65D7F829569AABAB /* EventTapTests.swift */; };
+		2B8DB928C4600B03D95BD5A9 /* CleaningSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B93C030549D27217FC0F3F1 /* CleaningSessionTests.swift */; };
+		2BF8569581F0F2FE2DD2E976 /* EmergencyExitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5B186CF947D93F2F6D81E /* EmergencyExitTests.swift */; };
+		1A0000010000000000000024 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000030A /* Sounds */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A0000010000000000000801 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A0000010000000000000501 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A0000010000000000000401;
+			remoteInfo = Kyboardclean;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A00000100000000000000F0 /* Kyboardclean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kyboardclean.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A00000100000000000000F1 /* KyboardcleanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KyboardcleanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0000010000000000000101 /* KyboardcleanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KyboardcleanApp.swift; sourceTree = "<group>"; };
+		1A0000010000000000000102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A0000010000000000000103 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1A0000010000000000000104 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		1A0000010000000000000106 /* DurationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationPicker.swift; sourceTree = "<group>"; };
+		1A0000010000000000000107 /* EventTapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTapManager.swift; sourceTree = "<group>"; };
+		1A0000010000000000000108 /* CleaningSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningSessionManager.swift; sourceTree = "<group>"; };
+		1A0000010000000000000109 /* PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsManager.swift; sourceTree = "<group>"; };
+		1A000001000000000000010A /* OverlayWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayWindowController.swift; sourceTree = "<group>"; };
+		1A000001000000000000010B /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		1A000001000000000000010C /* CleaningDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningDuration.swift; sourceTree = "<group>"; };
+		1A000001000000000000010D /* CleaningState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningState.swift; sourceTree = "<group>"; };
+		1A000001000000000000010E /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		1A000001000000000000010F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A0000010000000000000110 /* Kyboardclean.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kyboardclean.entitlements; sourceTree = "<group>"; };
+		1A0000010000000000000111 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		1A0000010000000000000112 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		1A0000010000000000000114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A0000010000000000000115 /* AppIconSource.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIconSource.png; sourceTree = "<group>"; };
+		1A0000010000000000000116 /* AppText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppText.swift; sourceTree = "<group>"; };
+		1A0000010000000000000117 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1A0000010000000000000119 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1A000001000000000000011A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1A000001000000000000011B /* README_en.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README_en.md; sourceTree = SOURCE_ROOT; };
+		1A000001000000000000011C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		1A0000010000000000000121 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A0000010000000000000122 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A0000010000000000000123 /* CleaningHistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningHistoryStore.swift; sourceTree = "<group>"; };
+		1A0000010000000000000124 /* GlobalShortcutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalShortcutManager.swift; sourceTree = "<group>"; };
+		1A0000010000000000000125 /* ReminderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderManager.swift; sourceTree = "<group>"; };
+		1A0000010000000000000126 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		1A0000010000000000000127 /* ShortcutRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutRecorderView.swift; sourceTree = "<group>"; };
+		1A0000010000000000000128 /* GeneralSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsView.swift; sourceTree = "<group>"; };
+		1A0000010000000000000129 /* AutomationSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomationSettingsView.swift; sourceTree = "<group>"; };
+		1A000001000000000000012A /* ActivitySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySettingsView.swift; sourceTree = "<group>"; };
+		2BC9A21AB988FC46EE53A5E5 /* EventTapSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTapSupport.swift; sourceTree = "<group>"; };
+		2B96B26A5DA01C0D21D995BE /* EmergencyExit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyExit.swift; sourceTree = "<group>"; };
+		2B912AE55D0607264E7DF6E6 /* TestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSupport.swift; sourceTree = "<group>"; };
+		2B716F0DE187AC1DA00B45AD /* SettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTests.swift; sourceTree = "<group>"; };
+		2B09B72B2939EFBD78608869 /* LocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTests.swift; sourceTree = "<group>"; };
+		2B527FB46B007C05DBB3AF2B /* CleaningHistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningHistoryTests.swift; sourceTree = "<group>"; };
+		2B932F33F7ED293777876470 /* GlobalShortcutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalShortcutTests.swift; sourceTree = "<group>"; };
+		2BD0117DE9684DD79306C56A /* ReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderTests.swift; sourceTree = "<group>"; };
+		2BD76EDB089FF434553A8A98 /* SystemIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemIntegrationTests.swift; sourceTree = "<group>"; };
+		2BA3B692E68C3D7750DC6ED8 /* OverlayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayTests.swift; sourceTree = "<group>"; };
+		2BD38AEF65D7F829569AABAB /* EventTapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTapTests.swift; sourceTree = "<group>"; };
+		2B93C030549D27217FC0F3F1 /* CleaningSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningSessionTests.swift; sourceTree = "<group>"; };
+		2BA5B186CF947D93F2F6D81E /* EmergencyExitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyExitTests.swift; sourceTree = "<group>"; };
+		1A000001000000000000030A /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A0000010000000000000201 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0000010000000000000205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A0000010000000000000301 = {
+			isa = PBXGroup;
+			children = (
+				1A0000010000000000000302 /* Kyboardclean */,
+				1A0000010000000000000309 /* KyboardcleanTests */,
+				1A0000010000000000000111 /* README.md */,
+				1A000001000000000000011B /* README_en.md */,
+				1A0000010000000000000112 /* LICENSE */,
+				1A0000010000000000000308 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A0000010000000000000302 /* Kyboardclean */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000010000000000000303 /* App */,
+				1A0000010000000000000304 /* Views */,
+				1A0000010000000000000305 /* Managers */,
+				1A0000010000000000000306 /* Models */,
+				1A0000010000000000000307 /* Resources */,
+			);
+			path = Kyboardclean;
+			sourceTree = "<group>";
+		};
+		1A0000010000000000000303 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000010000000000000101 /* KyboardcleanApp.swift */,
+				1A0000010000000000000102 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1A0000010000000000000304 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000010000000000000103 /* MainView.swift */,
+				1A0000010000000000000104 /* OverlayView.swift */,
+				1A0000010000000000000106 /* DurationPicker.swift */,
+				1A0000010000000000000117 /* SettingsView.swift */,
+				1A0000010000000000000128 /* GeneralSettingsView.swift */,
+				1A0000010000000000000129 /* AutomationSettingsView.swift */,
+				1A000001000000000000012A /* ActivitySettingsView.swift */,
+				1A0000010000000000000126 /* MenuBarView.swift */,
+				1A0000010000000000000127 /* ShortcutRecorderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A0000010000000000000305 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000010000000000000107 /* EventTapManager.swift */,
+				2B96B26A5DA01C0D21D995BE /* EmergencyExit.swift */,
+				2BC9A21AB988FC46EE53A5E5 /* EventTapSupport.swift */,
+				1A0000010000000000000108 /* CleaningSessionManager.swift */,
+				1A0000010000000000000109 /* PermissionsManager.swift */,
+				1A000001000000000000010A /* OverlayWindowController.swift */,
+				1A000001000000000000010B /* SoundManager.swift */,
+				1A0000010000000000000123 /* CleaningHistoryStore.swift */,
+				1A0000010000000000000124 /* GlobalShortcutManager.swift */,
+				1A0000010000000000000125 /* ReminderManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1A0000010000000000000306 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A000001000000000000010C /* CleaningDuration.swift */,
+				1A000001000000000000010D /* CleaningState.swift */,
+				1A000001000000000000010E /* AppSettings.swift */,
+				1A0000010000000000000116 /* AppText.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A0000010000000000000307 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000010000000000000114 /* Assets.xcassets */,
+				1A0000010000000000000115 /* AppIconSource.png */,
+				1A000001000000000000030A /* Sounds */,
+				1A0000010000000000000118 /* Localizable.strings */,
+				1A0000010000000000000120 /* InfoPlist.strings */,
+				1A000001000000000000011C /* PrivacyInfo.xcprivacy */,
+				1A000001000000000000010F /* Info.plist */,
+				1A0000010000000000000110 /* Kyboardclean.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A0000010000000000000308 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A00000100000000000000F0 /* Kyboardclean.app */,
+				1A00000100000000000000F1 /* KyboardcleanTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A0000010000000000000309 /* KyboardcleanTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BA5B186CF947D93F2F6D81E /* EmergencyExitTests.swift */,
+				2B93C030549D27217FC0F3F1 /* CleaningSessionTests.swift */,
+				2BD38AEF65D7F829569AABAB /* EventTapTests.swift */,
+				2BA3B692E68C3D7750DC6ED8 /* OverlayTests.swift */,
+				2BD76EDB089FF434553A8A98 /* SystemIntegrationTests.swift */,
+				2BD0117DE9684DD79306C56A /* ReminderTests.swift */,
+				2B932F33F7ED293777876470 /* GlobalShortcutTests.swift */,
+				2B527FB46B007C05DBB3AF2B /* CleaningHistoryTests.swift */,
+				2B09B72B2939EFBD78608869 /* LocalizationTests.swift */,
+				2B716F0DE187AC1DA00B45AD /* SettingsTests.swift */,
+				2B912AE55D0607264E7DF6E6 /* TestSupport.swift */,
+			);
+			path = KyboardcleanTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A0000010000000000000401 /* Kyboardclean */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0000010000000000000702 /* Build configuration list for PBXNativeTarget "Kyboardclean" */;
+			buildPhases = (
+				1A0000010000000000000202 /* Sources */,
+				1A0000010000000000000201 /* Frameworks */,
+				1A0000010000000000000203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kyboardclean;
+			productName = Kyboardclean;
+			productReference = 1A00000100000000000000F0 /* Kyboardclean.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A0000010000000000000402 /* KyboardcleanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0000010000000000000703 /* Build configuration list for PBXNativeTarget "KyboardcleanTests" */;
+			buildPhases = (
+				1A0000010000000000000204 /* Sources */,
+				1A0000010000000000000205 /* Frameworks */,
+				1A0000010000000000000206 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A0000010000000000000802 /* PBXTargetDependency */,
+			);
+			name = KyboardcleanTests;
+			productName = KyboardcleanTests;
+			productReference = 1A00000100000000000000F1 /* KyboardcleanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A0000010000000000000501 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					1A0000010000000000000401 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					1A0000010000000000000402 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 1A0000010000000000000401;
+					};
+				};
+			};
+			buildConfigurationList = 1A0000010000000000000701 /* Build configuration list for PBXProject "Kyboardclean" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+			);
+			mainGroup = 1A0000010000000000000301;
+			productRefGroup = 1A0000010000000000000308 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A0000010000000000000401 /* Kyboardclean */,
+				1A0000010000000000000402 /* KyboardcleanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A0000010000000000000203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A000001000000000000000F /* Assets.xcassets in Resources */,
+				1A0000010000000000000024 /* Sounds in Resources */,
+				1A000001000000000000001B /* InfoPlist.strings in Resources */,
+				1A0000010000000000000014 /* Localizable.strings in Resources */,
+				1A0000010000000000000015 /* README.md in Resources */,
+				1A0000010000000000000016 /* README_en.md in Resources */,
+				1A0000010000000000000017 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0000010000000000000206 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A0000010000000000000202 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0000010000000000000001 /* KyboardcleanApp.swift in Sources */,
+				1A0000010000000000000002 /* AppDelegate.swift in Sources */,
+				1A0000010000000000000003 /* MainView.swift in Sources */,
+				1A0000010000000000000004 /* OverlayView.swift in Sources */,
+				1A0000010000000000000006 /* DurationPicker.swift in Sources */,
+				1A0000010000000000000007 /* EventTapManager.swift in Sources */,
+				2B7E75ACB3773C7420DDDA64 /* EmergencyExit.swift in Sources */,
+				2B4E3746FFCD6D3A500B01C0 /* EventTapSupport.swift in Sources */,
+				1A0000010000000000000008 /* CleaningSessionManager.swift in Sources */,
+				1A0000010000000000000009 /* PermissionsManager.swift in Sources */,
+				1A000001000000000000000A /* OverlayWindowController.swift in Sources */,
+				1A000001000000000000000B /* SoundManager.swift in Sources */,
+				1A000001000000000000000C /* CleaningDuration.swift in Sources */,
+				1A000001000000000000000D /* CleaningState.swift in Sources */,
+				1A000001000000000000000E /* AppSettings.swift in Sources */,
+				1A0000010000000000000012 /* AppText.swift in Sources */,
+				1A0000010000000000000013 /* SettingsView.swift in Sources */,
+				1A000001000000000000001C /* CleaningHistoryStore.swift in Sources */,
+				1A000001000000000000001D /* GlobalShortcutManager.swift in Sources */,
+				1A000001000000000000001E /* ReminderManager.swift in Sources */,
+				1A000001000000000000001F /* MenuBarView.swift in Sources */,
+				1A0000010000000000000020 /* ShortcutRecorderView.swift in Sources */,
+				1A0000010000000000000021 /* GeneralSettingsView.swift in Sources */,
+				1A0000010000000000000022 /* AutomationSettingsView.swift in Sources */,
+				1A0000010000000000000023 /* ActivitySettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0000010000000000000204 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF8569581F0F2FE2DD2E976 /* EmergencyExitTests.swift in Sources */,
+				2B8DB928C4600B03D95BD5A9 /* CleaningSessionTests.swift in Sources */,
+				2BEC7D6B689D01D10A228FFA /* EventTapTests.swift in Sources */,
+				2B8B4F23C368F663BB22882B /* OverlayTests.swift in Sources */,
+				2BD22851D6DF296179B84535 /* SystemIntegrationTests.swift in Sources */,
+				2BE563D697453E1DFFE18E5A /* ReminderTests.swift in Sources */,
+				2B3504D2C173BE9A2AC9D663 /* GlobalShortcutTests.swift in Sources */,
+				2BF8319B5A71A09BB2E8E848 /* CleaningHistoryTests.swift in Sources */,
+				2BB29BAA0141E4E3DE61BF1A /* LocalizationTests.swift in Sources */,
+				2BECD960A89FA3D116D83978 /* SettingsTests.swift in Sources */,
+				2BBC70B4FE22A5897B9AAFCB /* TestSupport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A0000010000000000000802 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A0000010000000000000401 /* Kyboardclean */;
+			targetProxy = 1A0000010000000000000801 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A0000010000000000000118 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A0000010000000000000119 /* en */,
+				1A000001000000000000011A /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		1A0000010000000000000120 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A0000010000000000000121 /* en */,
+				1A0000010000000000000122 /* es */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A0000010000000000000601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A0000010000000000000602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1A0000010000000000000603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kyboardclean/Resources/Kyboardclean.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Kyboardclean/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erchosky.Kyboardclean;
+				PRODUCT_NAME = Kyboardclean;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		1A0000010000000000000604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kyboardclean/Resources/Kyboardclean.entitlements;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Kyboardclean/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erchosky.Kyboardclean;
+				PRODUCT_NAME = Kyboardclean;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		1A0000010000000000000605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erchosky.KyboardcleanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kyboardclean.app/Contents/MacOS/Kyboardclean";
+			};
+			name = Debug;
+		};
+		1A0000010000000000000606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erchosky.KyboardcleanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kyboardclean.app/Contents/MacOS/Kyboardclean";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A0000010000000000000701 /* Build configuration list for PBXProject "Kyboardclean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000010000000000000601 /* Debug */,
+				1A0000010000000000000602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0000010000000000000702 /* Build configuration list for PBXNativeTarget "Kyboardclean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000010000000000000603 /* Debug */,
+				1A0000010000000000000604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0000010000000000000703 /* Build configuration list for PBXNativeTarget "KyboardcleanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000010000000000000605 /* Debug */,
+				1A0000010000000000000606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A0000010000000000000501 /* Project object */;
+}

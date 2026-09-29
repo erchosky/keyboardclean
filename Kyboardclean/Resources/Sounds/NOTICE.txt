@@ -1,0 +1,13 @@
+Kyboardclean UI sounds
+
+Source: SND01 "sine" from https://snd.dev/
+Sound designer: Yasuhiro Tsuchiya
+Files used:
+- button.wav, renamed activation.wav
+- notification.wav, renamed success.wav
+
+SND permits free personal, business, commercial and non-commercial use,
+including implementation in applications and services. Copyright remains with
+the credited sound designer or Dentsu Inc. Redistribution or sale of the raw,
+unprocessed materials by themselves is prohibited. This notice is included for
+attribution and provenance. See https://snd.dev/ for the current full terms.

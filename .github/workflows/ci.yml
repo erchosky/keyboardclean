@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: macos-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Versión de Xcode
+        run: xcodebuild -version
+
+      # Los sonidos opcionales no están en el repositorio: los tests que los necesitan se omiten.
+      - name: Build y tests
+        run: |
+          xcodebuild \
+            -project Kyboardclean.xcodeproj \
+            -scheme Kyboardclean \
+            -destination 'platform=macOS' \
+            CODE_SIGN_IDENTITY=- \
+            test
