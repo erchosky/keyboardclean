@@ -1,10 +1,12 @@
 # Kyboardclean
 
-Kyboardclean es una app nativa para macOS pensada para limpiar físicamente el teclado y el trackpad de un Mac interceptando y bloqueando los eventos compatibles de teclado y ratón durante la limpieza, con limitaciones reales de macOS.
+Para pasarle el paño al teclado y al trackpad del Mac sin acabar escribiendo un testamento o haciendo clic donde no toca. Kyboardclean activa un modo limpieza que bloquea los eventos compatibles de teclado y ratón durante un rato.
 
-El nombre oficial es **Kyboardclean**. No debe corregirse a Keyboardclean ni traducirse.
+Tiene temporizador y varias formas de salir. macOS pone sus límites y están explicados más abajo, así que empieza con una sesión corta.
 
-## Qué hace
+Sí, se llama **Kyboardclean**. El nombre es ese, tal cual.
+
+## Qué trae
 
 - Muestra una ventana de control sencilla en SwiftUI.
 - Inicia un overlay de limpieza a pantalla completa en todas las pantallas detectadas por AppKit.
@@ -18,7 +20,7 @@ El nombre oficial es **Kyboardclean**. No debe corregirse a Keyboardclean ni tra
 - Incluye localización real en español e inglés mediante `es.lproj/Localizable.strings` y `en.lproj/Localizable.strings`.
 - Incluye icono de app en `Assets.xcassets/AppIcon.appiconset`, generado desde `Resources/AppIconSource.png`.
 
-## Qué no hace
+## Privacidad y límites del bloqueo
 
 - No se conecta a internet.
 - No incluye analytics, tracking, telemetría, crash reporter, login, base de datos ni actualizaciones automáticas.
@@ -97,7 +99,7 @@ Para añadirlos:
 3. Copia `notification.wav` como `Kyboardclean/Resources/Sounds/success.wav`.
 4. Vuelve a compilar. Git los ignora, así que no se subirán por error.
 
-## Compilar desde Terminal
+## Compilar desde la terminal
 
 Debug:
 
@@ -223,7 +225,7 @@ Kyboardclean no guarda keycodes, no guarda texto escrito, no llama a `CGEventKey
 
 `UserDefaults` se usa solo para preferencias inocuas, configuración del atajo y recordatorios, y el historial local de sesiones descrito arriba. Nunca contiene teclas ni eventos de entrada.
 
-## Primera prueba segura
+## La primera vez, prueba esto
 
 1. Compila y abre Kyboardclean.
 2. Concede el permiso de Accesibilidad.
@@ -262,7 +264,7 @@ No empieces la primera prueba con modo infinito ni con una sesión larga.
 13. Confirmar privacidad. Esperado: no hay APIs de red, telemetría, logs de teclado ni historial de teclas.
 14. Activar un campo de contraseña o app que active Secure Event Input. Esperado: el modo limpieza no empieza o se detiene si ya estaba activo.
 
-## Supuestos y limitaciones reales
+## Los peros de macOS
 
 - La app se distribuye fuera de App Store y no está sandboxed.
 - Accesibilidad es el permiso necesario para este comportamiento con `CGEventTap`.
